@@ -10,12 +10,10 @@ import Foundation
 struct MineChooseViewModel: ViewModelProtocol {
     func dynamicBinding(load: Loadable?, callBack: @escaping () -> ()) {
         AlamofireClient()
-//            .request(MineChooseRequest())
+            .request(MineChooseRequest())
             .load(load)
-
+            .respond(warn: AlterView.showAlter()){ (dict) in
+                debugPrint(dict)
+            }
     }
-    
-
-
-
 }

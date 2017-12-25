@@ -20,7 +20,7 @@ class LoadingView: UIView {
         left.duration = 1.5
         left.repeatCount = MAXFLOAT
         left.rotationMode = kCAAnimationCubic
-        left.isRemovedOnCompletion = true
+        left.isRemovedOnCompletion = false
         return left
         
     }()
@@ -70,6 +70,7 @@ class LoadingView: UIView {
             return
         }
         isShowing = false
+        loadingShaperLayerLeft?.removeAllAnimations()
     }
     
 }

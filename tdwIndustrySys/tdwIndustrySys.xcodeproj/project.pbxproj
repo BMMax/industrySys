@@ -14,6 +14,7 @@
 		CE34D92A1FEA165800A48F26 /* AppDelegate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34D9291FEA165800A48F26 /* AppDelegate+Extensions.swift */; };
 		CE34D92D1FEA176C00A48F26 /* CommonKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34D92C1FEA176C00A48F26 /* CommonKey.swift */; };
 		CE43C49C1FECE128001633A9 /* MineChooseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE43C49B1FECE128001633A9 /* MineChooseRequest.swift */; };
+		CE5488FC1FF0CA8C00710C01 /* AlterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5488FB1FF0CA8C00710C01 /* AlterView.swift */; };
 		CE8774151FEB8AD5004DE5E0 /* ApiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8774101FEB8AD5004DE5E0 /* ApiConfig.swift */; };
 		CE8774161FEB8AD5004DE5E0 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8774111FEB8AD5004DE5E0 /* HttpClient.swift */; };
 		CE8774171FEB8AD5004DE5E0 /* HttpParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8774121FEB8AD5004DE5E0 /* HttpParsable.swift */; };
@@ -67,6 +68,7 @@
 		CE34D9291FEA165800A48F26 /* AppDelegate+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Extensions.swift"; sourceTree = "<group>"; };
 		CE34D92C1FEA176C00A48F26 /* CommonKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonKey.swift; sourceTree = "<group>"; };
 		CE43C49B1FECE128001633A9 /* MineChooseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineChooseRequest.swift; sourceTree = "<group>"; };
+		CE5488FB1FF0CA8C00710C01 /* AlterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlterView.swift; sourceTree = "<group>"; };
 		CE8774101FEB8AD5004DE5E0 /* ApiConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiConfig.swift; sourceTree = "<group>"; };
 		CE8774111FEB8AD5004DE5E0 /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 		CE8774121FEB8AD5004DE5E0 /* HttpParsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpParsable.swift; sourceTree = "<group>"; };
@@ -346,6 +348,7 @@
 			isa = PBXGroup;
 			children = (
 				CED769201FEA62BC007A1FB2 /* Presenter.swift */,
+				CE5488FB1FF0CA8C00710C01 /* AlterView.swift */,
 			);
 			path = "Base ";
 			sourceTree = "<group>";
@@ -525,6 +528,7 @@
 				CE8774181FEB8AD5004DE5E0 /* HttpRequest.swift in Sources */,
 				CED768E01FEA3881007A1FB2 /* MainViewController.swift in Sources */,
 				CED768FF1FEA57C9007A1FB2 /* MineChooseModel.swift in Sources */,
+				CE5488FC1FF0CA8C00710C01 /* AlterView.swift in Sources */,
 				CE8774161FEB8AD5004DE5E0 /* HttpClient.swift in Sources */,
 				CE8774201FEB91E7004DE5E0 /* MaskHudView.swift in Sources */,
 				CE87741E1FEB8EDA004DE5E0 /* LoadingView.swift in Sources */,

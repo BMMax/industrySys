@@ -38,9 +38,6 @@ class MaskHudView: UIView, Maskable {
         loadView.mb
             .add(into: self)
             .layout{LoadViewLayout(view: $0).layoutMaker()}
-        
-        
-        
     }
     
     override func layoutSubviews() {
