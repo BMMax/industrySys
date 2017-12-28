@@ -36,7 +36,7 @@ class LoadingView: UIView {
     
     init(with view:UIView) {
         super.init(frame:view.bounds)
-        center = CGPoint(x: view.mb.width/2, y: view.mb.height/2)
+        center = CGPoint(x: view.width/2, y: view.height/2)
         
         container = view
         initCommon()

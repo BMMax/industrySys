@@ -14,6 +14,13 @@
 		CE34D92A1FEA165800A48F26 /* AppDelegate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34D9291FEA165800A48F26 /* AppDelegate+Extensions.swift */; };
 		CE34D92D1FEA176C00A48F26 /* CommonKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34D92C1FEA176C00A48F26 /* CommonKey.swift */; };
 		CE43C49C1FECE128001633A9 /* MineChooseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE43C49B1FECE128001633A9 /* MineChooseRequest.swift */; };
+		CE4887F41FF4853400FDF152 /* Footer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4887F31FF4853400FDF152 /* Footer.swift */; };
+		CE5446051FF1F4EB0067066D /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5446041FF1F4EB0067066D /* Header.swift */; };
+		CE5446081FF21E4B0067066D /* arrow_down@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5446071FF21E4B0067066D /* arrow_down@3x.png */; };
+		CE54460A1FF228730067066D /* RefreshUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5446091FF228730067066D /* RefreshUtils.swift */; };
+		CE54460D1FF236AD0067066D /* failure@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE54460B1FF236AD0067066D /* failure@3x.png */; };
+		CE54460E1FF236AD0067066D /* success@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE54460C1FF236AD0067066D /* success@3x.png */; };
+		CE5446101FF244470067066D /* PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE54460F1FF244470067066D /* PullToRefresh.swift */; };
 		CE5488FC1FF0CA8C00710C01 /* AlterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5488FB1FF0CA8C00710C01 /* AlterView.swift */; };
 		CE8774151FEB8AD5004DE5E0 /* ApiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8774101FEB8AD5004DE5E0 /* ApiConfig.swift */; };
 		CE8774161FEB8AD5004DE5E0 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8774111FEB8AD5004DE5E0 /* HttpClient.swift */; };
@@ -68,6 +75,13 @@
 		CE34D9291FEA165800A48F26 /* AppDelegate+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Extensions.swift"; sourceTree = "<group>"; };
 		CE34D92C1FEA176C00A48F26 /* CommonKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonKey.swift; sourceTree = "<group>"; };
 		CE43C49B1FECE128001633A9 /* MineChooseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineChooseRequest.swift; sourceTree = "<group>"; };
+		CE4887F31FF4853400FDF152 /* Footer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Footer.swift; sourceTree = "<group>"; };
+		CE5446041FF1F4EB0067066D /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		CE5446071FF21E4B0067066D /* arrow_down@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_down@3x.png"; sourceTree = "<group>"; };
+		CE5446091FF228730067066D /* RefreshUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshUtils.swift; sourceTree = "<group>"; };
+		CE54460B1FF236AD0067066D /* failure@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "failure@3x.png"; sourceTree = "<group>"; };
+		CE54460C1FF236AD0067066D /* success@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "success@3x.png"; sourceTree = "<group>"; };
+		CE54460F1FF244470067066D /* PullToRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefresh.swift; sourceTree = "<group>"; };
 		CE5488FB1FF0CA8C00710C01 /* AlterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlterView.swift; sourceTree = "<group>"; };
 		CE8774101FEB8AD5004DE5E0 /* ApiConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiConfig.swift; sourceTree = "<group>"; };
 		CE8774111FEB8AD5004DE5E0 /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
@@ -182,6 +196,7 @@
 		CE34D9261FEA135800A48F26 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				CE5446031FF1F3740067066D /* PullToRefresh */,
 				CE87740F1FEB8AD5004DE5E0 /* Network */,
 				CE34D92B1FEA173D00A48F26 /* Common */,
 				CE34D9271FEA162D00A48F26 /* Extensions */,
@@ -216,6 +231,28 @@
 				CED768D81FEA3212007A1FB2 /* CommonMethod.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		CE5446031FF1F3740067066D /* PullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				CE5446061FF21E430067066D /* Assets */,
+				CE5446091FF228730067066D /* RefreshUtils.swift */,
+				CE54460F1FF244470067066D /* PullToRefresh.swift */,
+				CE5446041FF1F4EB0067066D /* Header.swift */,
+				CE4887F31FF4853400FDF152 /* Footer.swift */,
+			);
+			path = PullToRefresh;
+			sourceTree = "<group>";
+		};
+		CE5446061FF21E430067066D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CE54460B1FF236AD0067066D /* failure@3x.png */,
+				CE54460C1FF236AD0067066D /* success@3x.png */,
+				CE5446071FF21E4B0067066D /* arrow_down@3x.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		CE87740F1FEB8AD5004DE5E0 /* Network */ = {
@@ -433,7 +470,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE54460D1FF236AD0067066D /* failure@3x.png in Resources */,
 				CE34D91C1FEA0ED200A48F26 /* LaunchScreen.storyboard in Resources */,
+				CE54460E1FF236AD0067066D /* success@3x.png in Resources */,
+				CE5446081FF21E4B0067066D /* arrow_down@3x.png in Resources */,
 				CE34D9191FEA0ED200A48F26 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +549,7 @@
 				CED769151FEA58AB007A1FB2 /* TransactionViewModel.swift in Sources */,
 				CED769051FEA5810007A1FB2 /* MarketQuotationModel.swift in Sources */,
 				CE8774151FEB8AD5004DE5E0 /* ApiConfig.swift in Sources */,
+				CE4887F41FF4853400FDF152 /* Footer.swift in Sources */,
 				CED768F91FEA5522007A1FB2 /* TransactionController.swift in Sources */,
 				CED768EC1FEA51B7007A1FB2 /* BaseController.swift in Sources */,
 				CED769131FEA58A2007A1FB2 /* TransactionView.swift in Sources */,
@@ -525,9 +566,11 @@
 				CED769091FEA582E007A1FB2 /* MarketQuotationPresenter.swift in Sources */,
 				CED7692B1FEA6713007A1FB2 /* UIView+Layout.swift in Sources */,
 				CE34D92A1FEA165800A48F26 /* AppDelegate+Extensions.swift in Sources */,
+				CE5446101FF244470067066D /* PullToRefresh.swift in Sources */,
 				CE8774181FEB8AD5004DE5E0 /* HttpRequest.swift in Sources */,
 				CED768E01FEA3881007A1FB2 /* MainViewController.swift in Sources */,
 				CED768FF1FEA57C9007A1FB2 /* MineChooseModel.swift in Sources */,
+				CE5446051FF1F4EB0067066D /* Header.swift in Sources */,
 				CE5488FC1FF0CA8C00710C01 /* AlterView.swift in Sources */,
 				CE8774161FEB8AD5004DE5E0 /* HttpClient.swift in Sources */,
 				CE8774201FEB91E7004DE5E0 /* MaskHudView.swift in Sources */,
@@ -547,6 +590,7 @@
 				CED7690B1FEA5853007A1FB2 /* InfomationView.swift in Sources */,
 				CED769071FEA5822007A1FB2 /* MarketQuotationView.swift in Sources */,
 				CEB403FE1FEB57B70020A790 /* UIImageExtensions.swift in Sources */,
+				CE54460A1FF228730067066D /* RefreshUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,7 +725,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/tdwIndustrySys/SupportFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = binM.tdwIndustrySys;
+				PRODUCT_BUNDLE_IDENTIFIER = binM.industrySys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -698,7 +742,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/tdwIndustrySys/SupportFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = binM.tdwIndustrySys;
+				PRODUCT_BUNDLE_IDENTIFIER = binM.industrySys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;

@@ -44,3 +44,31 @@ public func isHavingNewVersion(newVersion:String,currentVersion:String) -> Bool{
     }
     return newCount <= curCount ? false : true
 }
+
+///GCD 延时
+public func delay(_ delay:Double, closure:@escaping ()->()) {
+    DispatchQueue.main.asyncAfter(
+        deadline: DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: closure)
+}
+
+public func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+    switch (lhs, rhs) {
+    case let (l?, r?):
+        return l < r
+    case (nil, _?):
+        return true
+    default:
+        return false
+    }
+}
+
+public func > <T: Comparable> (lhs: T?, rhs: T?) -> Bool {
+    switch (lhs,rhs) {
+    case let (l?,r?):
+        return l < r
+    default:
+        return rhs < lhs
+    }
+}
+
+

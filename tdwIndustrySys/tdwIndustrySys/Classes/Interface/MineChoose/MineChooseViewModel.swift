@@ -11,8 +11,8 @@ struct MineChooseViewModel: ViewModelProtocol {
     func dynamicBinding(load: Loadable?, callBack: @escaping () -> ()) {
         AlamofireClient()
             .request(MineChooseRequest())
-            .load(load)
-            .respond(warn: AlterView.showAlter()){ (dict) in
+//            .load(load)
+            .respond(warn: AlterView.show()){ (dict) in
                 debugPrint(dict)
             }
     }

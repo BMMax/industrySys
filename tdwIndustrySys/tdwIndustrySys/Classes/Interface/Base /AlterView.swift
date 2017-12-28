@@ -9,7 +9,7 @@
 import UIKit
 struct AlterView {
     
-    public static func showAlter(title: String? = nil, message: String? = nil, handler: (()->Void)? = nil) -> UIAlertController {
+    public static func show(title: String? = nil, message: String? = nil, handler: (()->Void)? = nil) -> UIAlertController {
         
         
         let alter = UIAlertController(title: title, message: message, preferredStyle: .alert)

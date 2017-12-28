@@ -8,8 +8,8 @@
 
 import UIKit
 
-extension UILayout where Base: UIView {
-
+extension UIView {
+    
     public var screenW: CGFloat {
         return UIScreen.main.bounds.width
     }
@@ -21,73 +21,110 @@ extension UILayout where Base: UIView {
 
     public var width: CGFloat {
         set{
-            var rect = base.frame
+            var rect = self.frame
             rect.size.width = newValue
-            base.frame = rect
+            self.frame = rect
         }
 
         get {
-            return base.frame.width
+            return self.frame.width
         }
     }
 
     public var height: CGFloat {
         set{
-            var rect = base.frame
+            var rect = self.frame
             rect.size.height = newValue
-            base.frame = rect
+            self.frame = rect
         }
         get{
-            return base.frame.height
+            return self.frame.height
         }
     }
 
     public var size: CGSize {
         set {
-            var rect = base.frame
+            var rect = self.frame
             rect.size = newValue
-            base.frame = rect
+            self.frame = rect
         }
 
         get {
-            return base.frame.size
+            return self.frame.size
         }
     }
 
     public var x: CGFloat {
         set {
-            var rect = base.frame
+            var rect = self.frame
             rect.origin.x = newValue
-            base.frame = rect
+            self.frame = rect
         }
 
         get {
-            return base.frame.minX
+            return self.frame.minX
         }
     }
 
     public var y: CGFloat {
         set {
-            var rect = base.frame
+            var rect = self.frame
             rect.origin.y = newValue
-            base.frame = rect
+            self.frame = rect
         }
 
         get {
-            return base.frame.minY
+            return self.frame.minY
+        }
+    }
+    
+    
+    
+    public var left: CGFloat {
+        get {
+            return self.x
+        } set(value) {
+            self.x = value
+        }
+    }
+    
+    
+    public var right: CGFloat {
+        get {
+            return self.x + self.width
+        } set(value) {
+            self.x = value - self.width
+        }
+    }
+    
+    
+    public var top: CGFloat {
+        get {
+            return self.y
+        } set(value) {
+            self.y = value
+        }
+    }
+    
+    
+    public var bottom: CGFloat {
+        get {
+            return self.y + self.height
+        } set(value) {
+            self.y = value - self.height
         }
     }
 
 
     public var xy: CGPoint {
         set {
-            var rect = base.frame
+            var rect = self.frame
             rect.origin = newValue
-            base.frame = rect
+            self.frame = rect
         }
 
         get {
-            return base.frame.origin
+            return self.frame.origin
         }
     }
 
@@ -95,26 +132,26 @@ extension UILayout where Base: UIView {
     /// 锚点x
     public var anchorX: CGFloat {
         set {
-            var anchor = base.layer.anchorPoint
+            var anchor = self.layer.anchorPoint
             anchor.x = newValue
-            base.layer.anchorPoint = anchor
+            self.layer.anchorPoint = anchor
         }
 
         get {
-            return base.layer.anchorPoint.x
+            return self.layer.anchorPoint.x
         }
     }
 
     /// 锚点y
     public var anchorY: CGFloat {
         set {
-            var anchor = base.layer.anchorPoint
+            var anchor = self.layer.anchorPoint
             anchor.y = newValue
-            base.layer.anchorPoint = anchor
+            self.layer.anchorPoint = anchor
         }
 
         get {
-            return base.layer.anchorPoint.y
+            return self.layer.anchorPoint.y
         }
     }
 
@@ -126,7 +163,7 @@ extension UILayout where Base: UIView {
         }
 
         get {
-            return base.frame.maxX
+            return self.frame.maxX
         }
     }
 
@@ -136,7 +173,7 @@ extension UILayout where Base: UIView {
         }
 
         get {
-            return base.frame.maxY
+            return self.frame.maxY
         }
     }
 
@@ -146,7 +183,7 @@ extension UILayout where Base: UIView {
         }
 
         get {
-            return base.frame.minX + base.frame.width / 2
+            return self.frame.minX + self.frame.width / 2
         }
     }
 
@@ -156,44 +193,32 @@ extension UILayout where Base: UIView {
         }
 
         get {
-            return base.frame.minY + base.frame.height / 2
+            return self.frame.minY + self.frame.height / 2
         }
     }
 
 
     public var centerX: CGFloat {
         set {
-            var center = base.center
+            var center = self.center
             center.x = newValue
-            base.center = center
+            self.center = center
         }
 
         get {
-            return base.center.x
+            return self.center.x
         }
     }
 
     public var centerY: CGFloat {
         set {
-            var center = base.center
+            var center = self.center
             center.y = newValue
-            base.center = center
+            self.center = center
         }
 
         get {
-            return base.center.y
-        }
-    }
-
-    public var center: CGPoint {
-        set {
-            var center = base.center
-            center = newValue
-            base.center = center
-        }
-
-        get {
-            return base.center
+            return self.center.y
         }
     }
 }
